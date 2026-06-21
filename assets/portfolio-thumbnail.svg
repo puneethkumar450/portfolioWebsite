@@ -1,0 +1,77 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="76" y1="58" x2="1126" y2="594" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C2413"/>
+      <stop offset="1" stop-color="#08140D"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(205 115) rotate(34.1) scale(357.907 262.037)">
+      <stop stop-color="#56FF79" stop-opacity=".34"/>
+      <stop offset="1" stop-color="#56FF79" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1030 504) rotate(180) scale(290 220)">
+      <stop stop-color="#7CF3FF" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#7CF3FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="182" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4FF92"/>
+      <stop offset="1" stop-color="#98FFAC"/>
+    </linearGradient>
+    <filter id="blur" x="-40" y="-40" width="1280" height="710" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" rx="34" fill="#07110A"/>
+  <rect x="24" y="24" width="1152" height="582" rx="34" fill="url(#bg)" stroke="rgba(151,255,176,0.12)"/>
+  <g filter="url(#blur)">
+    <ellipse cx="206" cy="118" rx="220" ry="150" fill="url(#glowA)"/>
+    <ellipse cx="1030" cy="510" rx="190" ry="150" fill="url(#glowB)"/>
+  </g>
+
+  <g opacity=".28">
+    <path d="M66 78H1134" stroke="#63F276" stroke-opacity=".18"/>
+    <path d="M66 126H1134" stroke="#63F276" stroke-opacity=".12"/>
+    <path d="M66 174H1134" stroke="#63F276" stroke-opacity=".12"/>
+    <path d="M66 222H1134" stroke="#63F276" stroke-opacity=".12"/>
+    <path d="M66 270H1134" stroke="#63F276" stroke-opacity=".12"/>
+    <path d="M66 318H1134" stroke="#63F276" stroke-opacity=".12"/>
+    <path d="M66 366H1134" stroke="#63F276" stroke-opacity=".12"/>
+    <path d="M66 414H1134" stroke="#63F276" stroke-opacity=".12"/>
+    <path d="M66 462H1134" stroke="#63F276" stroke-opacity=".12"/>
+    <path d="M66 510H1134" stroke="#63F276" stroke-opacity=".12"/>
+    <path d="M66 558H1134" stroke="#63F276" stroke-opacity=".12"/>
+    <path d="M114 42V588" stroke="#63F276" stroke-opacity=".12"/>
+    <path d="M210 42V588" stroke="#63F276" stroke-opacity=".12"/>
+    <path d="M306 42V588" stroke="#63F276" stroke-opacity=".12"/>
+    <path d="M402 42V588" stroke="#63F276" stroke-opacity=".12"/>
+    <path d="M498 42V588" stroke="#63F276" stroke-opacity=".12"/>
+    <path d="M594 42V588" stroke="#63F276" stroke-opacity=".12"/>
+    <path d="M690 42V588" stroke="#63F276" stroke-opacity=".12"/>
+    <path d="M786 42V588" stroke="#63F276" stroke-opacity=".12"/>
+    <path d="M882 42V588" stroke="#63F276" stroke-opacity=".12"/>
+    <path d="M978 42V588" stroke="#63F276" stroke-opacity=".12"/>
+    <path d="M1074 42V588" stroke="#63F276" stroke-opacity=".12"/>
+  </g>
+
+  <rect x="70" y="76" width="276" height="46" rx="23" fill="url(#chip)"/>
+  <text x="102" y="106" fill="#072411" font-size="22" font-family="Arial, Helvetica, sans-serif" font-weight="700" letter-spacing="2.4">SENIOR ANDROID DEVELOPER</text>
+
+  <text x="76" y="218" fill="#EFFff2" font-size="88" font-family="Arial, Helvetica, sans-serif" font-weight="700">Puneeth Kumar</text>
+  <text x="76" y="306" fill="#98FFAC" font-size="68" font-family="Arial, Helvetica, sans-serif" font-weight="700">Android products, built for real time.</text>
+
+  <text x="76" y="390" fill="#B3D8BC" font-size="32" font-family="Arial, Helvetica, sans-serif">Jetpack Compose, Kotlin, real-time systems, live streaming,</text>
+  <text x="76" y="434" fill="#B3D8BC" font-size="32" font-family="Arial, Helvetica, sans-serif">CI/CD, release delivery, and scalable mobile experiences.</text>
+
+  <rect x="76" y="490" width="220" height="72" rx="36" fill="rgba(255,255,255,0.04)" stroke="rgba(152,255,172,0.18)"/>
+  <text x="108" y="535" fill="#EFFff2" font-size="28" font-family="Arial, Helvetica, sans-serif" font-weight="700">10+ years</text>
+
+  <rect x="314" y="490" width="284" height="72" rx="36" fill="rgba(255,255,255,0.04)" stroke="rgba(152,255,172,0.18)"/>
+  <text x="346" y="535" fill="#EFFff2" font-size="28" font-family="Arial, Helvetica, sans-serif" font-weight="700">80+ call participants</text>
+
+  <rect x="616" y="490" width="310" height="72" rx="36" fill="rgba(255,255,255,0.04)" stroke="rgba(152,255,172,0.18)"/>
+  <text x="648" y="535" fill="#EFFff2" font-size="28" font-family="Arial, Helvetica, sans-serif" font-weight="700">72K live viewers</text>
+
+  <circle cx="1078" cy="116" r="14" fill="#98FFAC"/>
+  <circle cx="1120" cy="116" r="14" fill="#F4FF92"/>
+  <circle cx="1099" cy="158" r="14" fill="#7CF3FF"/>
+</svg>
