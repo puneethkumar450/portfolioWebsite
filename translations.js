@@ -13,6 +13,7 @@ window.TRANSLATIONS = {
     "hero.title2": "为实时体验而生。",
     "hero.text": "我专注于以 Kotlin 为核心的移动端开发，作品覆盖实时会议、直播、银行、VPN、聊天与 AI 产品，并全面负责架构设计、CI/CD 与版本发布。",
     "hero.resume": "简历",
+    "hero.resumeHref": "assets/Puneeth_Resume_Chinese.pdf",
 
     "fit.tag": "为什么选择我",
     "fit.heading": "让招聘方、创始人和 Android 团队快速了解我。",

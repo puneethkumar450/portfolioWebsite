@@ -107,9 +107,11 @@ const LANG_STORAGE_KEY = "portfolio-lang";
 const zhDictionary = (window.TRANSLATIONS && window.TRANSLATIONS.zh) || {};
 const i18nTextElements = document.querySelectorAll("[data-i18n]");
 const i18nAriaElements = document.querySelectorAll("[data-i18n-aria]");
+const i18nHrefElements = document.querySelectorAll("[data-i18n-href]");
 const langButtons = document.querySelectorAll("[data-lang-option]");
 const englishTextByElement = new Map();
 const englishAriaByElement = new Map();
+const englishHrefByElement = new Map();
 const englishTitle = document.title;
 
 i18nTextElements.forEach((element) => {
@@ -118,6 +120,10 @@ i18nTextElements.forEach((element) => {
 
 i18nAriaElements.forEach((element) => {
   englishAriaByElement.set(element, element.getAttribute("aria-label") || "");
+});
+
+i18nHrefElements.forEach((element) => {
+  englishHrefByElement.set(element, element.getAttribute("href") || "");
 });
 
 const applyLanguage = (lang) => {
@@ -138,6 +144,12 @@ const applyLanguage = (lang) => {
     const key = element.getAttribute("data-i18n-aria");
     const english = englishAriaByElement.get(element);
     element.setAttribute("aria-label", isChinese ? zhDictionary[key] || english : english);
+  });
+
+  i18nHrefElements.forEach((element) => {
+    const key = element.getAttribute("data-i18n-href");
+    const english = englishHrefByElement.get(element);
+    element.setAttribute("href", isChinese ? zhDictionary[key] || english : english);
   });
 
   langButtons.forEach((button) => {
