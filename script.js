@@ -102,3 +102,67 @@ if (rope && ropeDragger) {
   window.addEventListener("resize", syncRopeToScroll);
   syncRopeToScroll();
 }
+
+const LANG_STORAGE_KEY = "portfolio-lang";
+const zhDictionary = (window.TRANSLATIONS && window.TRANSLATIONS.zh) || {};
+const i18nTextElements = document.querySelectorAll("[data-i18n]");
+const i18nAriaElements = document.querySelectorAll("[data-i18n-aria]");
+const langButtons = document.querySelectorAll("[data-lang-option]");
+const englishTextByElement = new Map();
+const englishAriaByElement = new Map();
+const englishTitle = document.title;
+
+i18nTextElements.forEach((element) => {
+  englishTextByElement.set(element, element.textContent.trim());
+});
+
+i18nAriaElements.forEach((element) => {
+  englishAriaByElement.set(element, element.getAttribute("aria-label") || "");
+});
+
+const applyLanguage = (lang) => {
+  const isChinese = lang === "zh";
+
+  document.documentElement.lang = isChinese ? "zh-CN" : "en";
+  document.title = isChinese
+    ? zhDictionary["meta.title"] || englishTitle
+    : englishTitle;
+
+  i18nTextElements.forEach((element) => {
+    const key = element.getAttribute("data-i18n");
+    const english = englishTextByElement.get(element);
+    element.textContent = isChinese ? zhDictionary[key] || english : english;
+  });
+
+  i18nAriaElements.forEach((element) => {
+    const key = element.getAttribute("data-i18n-aria");
+    const english = englishAriaByElement.get(element);
+    element.setAttribute("aria-label", isChinese ? zhDictionary[key] || english : english);
+  });
+
+  langButtons.forEach((button) => {
+    const isActive = button.getAttribute("data-lang-option") === lang;
+    button.classList.toggle("is-active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
+  });
+
+  try {
+    localStorage.setItem(LANG_STORAGE_KEY, lang);
+  } catch (error) {
+    // localStorage can be unavailable (private mode); the language still applies for this visit.
+  }
+};
+
+langButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    applyLanguage(button.getAttribute("data-lang-option"));
+  });
+});
+
+let initialLang = "en";
+try {
+  initialLang = localStorage.getItem(LANG_STORAGE_KEY) === "zh" ? "zh" : "en";
+} catch (error) {
+  initialLang = "en";
+}
+applyLanguage(initialLang);

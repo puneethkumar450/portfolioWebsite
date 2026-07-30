@@ -30,7 +30,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&family=Noto+Sans+SC:wght@400;500;700;800&display=swap"
     rel="stylesheet"
   >
   <link rel="stylesheet" href="styles.css">
@@ -42,7 +42,13 @@
       <div class="android-grid" aria-hidden="true"></div>
       <aside class="scroll-rope">
         <div class="scroll-rope-line"></div>
-        <button class="scroll-rope-knob" id="rope-dragger" type="button" aria-label="Drag rope to scroll the page"></button>
+        <button
+          class="scroll-rope-knob"
+          id="rope-dragger"
+          type="button"
+          aria-label="Drag rope to scroll the page"
+          data-i18n-aria="a11y.rope"
+        ></button>
       </aside>
 
     <header class="site-header">
@@ -50,27 +56,32 @@
         <span class="brand-dot"></span>
         <span class="brand-copy">
           <span class="brand-name">Puneeth Kumar</span>
-          <span class="brand-role">Senior Android Developer</span>
+          <span class="brand-role" data-i18n="brand.role">Senior Android Developer</span>
         </span>
       </a>
-      <nav class="site-nav" aria-label="Primary">
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+      <nav class="site-nav" aria-label="Primary" data-i18n-aria="a11y.nav">
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
+      <div class="lang-switch" role="group" aria-label="Language" data-i18n-aria="a11y.lang">
+        <button type="button" data-lang-option="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang-option="zh" aria-pressed="false">中文</button>
+      </div>
     </header>
 
     <main id="top">
       <section class="hero section">
         <div class="hero-copy" data-reveal>
-          <div class="hero-socials" aria-label="Social links">
+          <div class="hero-socials" aria-label="Social links" data-i18n-aria="a11y.socials">
             <a
               class="hero-social"
               href="https://www.linkedin.com/in/puneeth-builds-android/"
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn profile"
+              data-i18n-aria="a11y.linkedin"
             >
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M6.94 8.5H3.56V20h3.38zm.22-3.69A1.97 1.97 0 1 0 5.2 6.78a1.97 1.97 0 0 0 1.96-1.97M20.44 20h-3.37v-5.6c0-1.34-.03-3.06-1.86-3.06-1.87 0-2.16 1.46-2.16 2.96V20H9.68V8.5h3.24v1.57h.05c.45-.86 1.55-1.76 3.2-1.76 3.42 0 4.05 2.25 4.05 5.17z"/>
@@ -82,6 +93,7 @@
               target="_blank"
               rel="noreferrer"
               aria-label="Instagram profile"
+              data-i18n-aria="a11y.instagram"
             >
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2m0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5a3.95 3.95 0 0 0 3.95 3.95h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5a3.95 3.95 0 0 0-3.95-3.95zm8.95 1.35a1.1 1.1 0 1 1-1.1 1.1 1.1 1.1 0 0 1 1.1-1.1M12 6.85A5.15 5.15 0 1 1 6.85 12 5.15 5.15 0 0 1 12 6.85m0 1.8A3.35 3.35 0 1 0 15.35 12 3.35 3.35 0 0 0 12 8.65"/>
@@ -89,16 +101,22 @@
             </a>
           </div>
           <h1>
-            Android products,
-            <span class="hero-accent">built for real time.</span>
+            <span data-i18n="hero.title1">Android products,</span>
+            <span class="hero-accent" data-i18n="hero.title2">built for real time.</span>
           </h1>
-          <p class="hero-text">
+          <p class="hero-text" data-i18n="hero.text">
             I design and ship Kotlin-first mobile experiences across live meetings, streaming, banking,
             VPN, chat, and AI-assisted products, with strong ownership across architecture, CI/CD, and release delivery.
           </p>
 
           <div class="hero-actions">
-            <a class="button button-secondary" href="assets/Puneeth_Kumar_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+            <a
+              class="button button-secondary"
+              href="assets/Puneeth_Kumar_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              data-i18n="hero.resume"
+            >Resume</a>
           </div>
         </div>
 
@@ -111,103 +129,103 @@
             </div>
 
             <div class="fit-intro">
-              <span class="fit-tag">Why hire me</span>
-              <h2>Fast signal for recruiters, founders, and Android teams.</h2>
-              <p>
+              <span class="fit-tag" data-i18n="fit.tag">Why hire me</span>
+              <h2 data-i18n="fit.heading">Fast signal for recruiters, founders, and Android teams.</h2>
+              <p data-i18n="fit.intro">
                 If you need someone who can own Android delivery end to end, this is the work I’m best at and the environments where I add value fastest.
               </p>
             </div>
 
             <div class="fit-summary">
               <div class="fit-summary-card fit-summary-primary">
-                <span class="fit-label">Best fit</span>
-                <strong>Senior Android roles with real product ownership</strong>
-                <p>Especially teams building real-time experiences, modern Compose UI, or release-critical mobile products.</p>
+                <span class="fit-label" data-i18n="fit.best.label">Best fit</span>
+                <strong data-i18n="fit.best.title">Senior Android roles with real product ownership</strong>
+                <p data-i18n="fit.best.text">Especially teams building real-time experiences, modern Compose UI, or release-critical mobile products.</p>
               </div>
               <div class="fit-summary-card">
-                <span class="fit-label">What I bring</span>
+                <span class="fit-label" data-i18n="fit.bring.label">What I bring</span>
                 <ul class="fit-list">
-                  <li>10+ years of Android delivery across startups and product teams</li>
-                  <li>Jetpack Compose, Kotlin, architecture, and production release ownership</li>
-                  <li>Leadership experience mentoring engineers and shipping under pressure</li>
+                  <li data-i18n="fit.bring.item1">10+ years of Android delivery across startups and product teams</li>
+                  <li data-i18n="fit.bring.item2">Jetpack Compose, Kotlin, architecture, and production release ownership</li>
+                  <li data-i18n="fit.bring.item3">Leadership experience mentoring engineers and shipping under pressure</li>
                 </ul>
               </div>
             </div>
 
             <div class="fit-proof-grid">
               <article class="fit-proof-card">
-                <span class="fit-label">Proof 01</span>
-                <strong>80+ participants</strong>
-                <p>Built meeting SDK experiences with Compose UI and reliable multi-user call flows.</p>
-                <a href="#experience">View experience</a>
+                <span class="fit-label" data-i18n="fit.proof1.label">Proof 01</span>
+                <strong data-i18n="fit.proof1.value">80+ participants</strong>
+                <p data-i18n="fit.proof1.text">Built meeting SDK experiences with Compose UI and reliable multi-user call flows.</p>
+                <a href="#experience" data-i18n="fit.proof1.link">View experience</a>
               </article>
               <article class="fit-proof-card">
-                <span class="fit-label">Proof 02</span>
-                <strong>72K concurrent viewers</strong>
-                <p>Scaled live-streaming Android surfaces for high-traffic usage and steady product feel.</p>
-                <a href="#projects">View projects</a>
+                <span class="fit-label" data-i18n="fit.proof2.label">Proof 02</span>
+                <strong data-i18n="fit.proof2.value">72K concurrent viewers</strong>
+                <p data-i18n="fit.proof2.text">Scaled live-streaming Android surfaces for high-traffic usage and steady product feel.</p>
+                <a href="#projects" data-i18n="fit.proof2.link">View projects</a>
               </article>
               <article class="fit-proof-card">
-                <span class="fit-label">Proof 03</span>
-                <strong>4 hrs to 2 hrs</strong>
-                <p>Improved CI/CD and release operations to make production shipping faster and calmer.</p>
-                <a href="#skills">View skills</a>
+                <span class="fit-label" data-i18n="fit.proof3.label">Proof 03</span>
+                <strong data-i18n="fit.proof3.value">4 hrs to 2 hrs</strong>
+                <p data-i18n="fit.proof3.text">Improved CI/CD and release operations to make production shipping faster and calmer.</p>
+                <a href="#skills" data-i18n="fit.proof3.link">View skills</a>
               </article>
             </div>
 
             <div class="fit-footer">
               <div class="fit-availability">
-                <span class="fit-label">Works well with</span>
-                <p>Product teams that want one engineer who can handle UI polish, architecture decisions, debugging, and release delivery.</p>
+                <span class="fit-label" data-i18n="fit.works.label">Works well with</span>
+                <p data-i18n="fit.works.text">Product teams that want one engineer who can handle UI polish, architecture decisions, debugging, and release delivery.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="highlights section" aria-label="Key achievements">
+      <section class="highlights section" aria-label="Key achievements" data-i18n-aria="a11y.achievements">
         <article class="stat-card" data-reveal>
           <p class="stat-value">10+</p>
-          <p class="stat-label">Years delivering Android products across startups, SaaS, and high-scale platforms.</p>
+          <p class="stat-label" data-i18n="stats.years.label">Years delivering Android products across startups, SaaS, and high-scale platforms.</p>
         </article>
         <article class="stat-card" data-reveal>
-          <p class="stat-value">4 teams</p>
-          <p class="stat-label">Leadership experience across SDK, UI modernization, mentoring, and release systems.</p>
+          <p class="stat-value" data-i18n="stats.teams.value">4 teams</p>
+          <p class="stat-label" data-i18n="stats.teams.label">Leadership experience across SDK, UI modernization, mentoring, and release systems.</p>
         </article>
         <article class="stat-card" data-reveal>
-          <p class="stat-value">50K+</p>
-          <p class="stat-label">Public app downloads achieved on shipped consumer experiences.</p>
+          <p class="stat-value" data-i18n="stats.downloads.value">50K+</p>
+          <p class="stat-label" data-i18n="stats.downloads.label">Public app downloads achieved on shipped consumer experiences.</p>
         </article>
       </section>
 
       <section class="section narrative">
         <div class="section-heading" data-reveal>
           <div>
-            <p class="eyebrow">What I Do</p>
-            <h2>I turn complex mobile systems into smooth user experiences.</h2>
+            <p class="eyebrow" data-i18n="what.eyebrow">What I Do</p>
+            <h2 data-i18n="what.heading">I turn complex mobile systems into smooth user experiences.</h2>
           </div>
           <div class="section-heading-copy">
-            <p class="section-lead">
+            <p class="section-lead" data-i18n="what.lead">
               My work sits where product feel and systems reliability meet: user-facing polish on top of real-time infrastructure, scalable architecture, and disciplined release ownership.
             </p>
           </div>
         </div>
         <div class="narrative-grid">
           <article class="story-card" data-reveal>
-            <h3>Real-time systems</h3>
-            <p>
+            <h3 data-i18n="what.card1.title">Real-time systems</h3>
+            <p data-i18n="what.card1.text">
               Meeting SDKs, live scoring, chat, and streaming products where latency, stability, and recovery behavior matter.
             </p>
           </article>
           <article class="story-card" data-reveal>
-            <h3>Modern Android architecture</h3>
-            <p>
+            <h3 data-i18n="what.card2.title">Modern Android architecture</h3>
+            <p data-i18n="what.card2.text">
               Kotlin, Jetpack Compose, MVVM, Coroutines, Flow, Hilt, Room, and scalable UI patterns that teams can maintain.
             </p>
           </article>
           <article class="story-card" data-reveal>
-            <h3>Delivery ownership</h3>
-            <p>
+            <h3 data-i18n="what.card3.title">Delivery ownership</h3>
+            <p data-i18n="what.card3.text">
               CI/CD pipelines, Play Store rollout management, performance tuning, crash reduction, and practical team mentorship.
             </p>
           </article>
@@ -217,17 +235,17 @@
       <section class="section timeline-section" id="experience">
         <div class="section-heading" data-reveal>
           <div>
-            <p class="eyebrow">Experience</p>
-            <h2>Built across meetings, streaming, banking, automation, and chat.</h2>
+            <p class="eyebrow" data-i18n="exp.eyebrow">Experience</p>
+            <h2 data-i18n="exp.heading">Built across meetings, streaming, banking, automation, and chat.</h2>
           </div>
           <div class="section-heading-copy">
-            <p class="section-lead">
+            <p class="section-lead" data-i18n="exp.lead">
               From early-stage chat to large-scale streaming and modern meeting platforms, the common thread has been building Android products that stay fast, stable, and production-ready.
             </p>
             <div class="section-metrics">
-              <span>10+ years</span>
-              <span>72K live viewers</span>
-              <span>80+ call participants</span>
+              <span data-i18n="exp.metric1">10+ years</span>
+              <span data-i18n="exp.metric2">72K live viewers</span>
+              <span data-i18n="exp.metric3">80+ call participants</span>
             </div>
           </div>
         </div>
@@ -236,14 +254,14 @@
           <article class="timeline-item" data-reveal>
             <div class="timeline-rail"></div>
             <div class="timeline-content">
-              <p class="timeline-meta">Jan 2025 - Present</p>
-              <h3>Senior Android Developer · AlgoFrame Private Limited</h3>
-              <p class="timeline-subtitle">Algomeet and Qianlima VPN</p>
+              <p class="timeline-meta" data-i18n="job1.meta">Jan 2025 - Present</p>
+              <h3 data-i18n="job1.title">Senior Android Developer · AlgoFrame Private Limited</h3>
+              <p class="timeline-subtitle" data-i18n="job1.subtitle">Algomeet and Qianlima VPN</p>
               <ul>
-                <li>Led 4 engineers building Algomeet's Meeting SDK with support for 80+ concurrent participants per call.</li>
-                <li>Built Compose-based product UI and adaptive 1080p video streaming with end-to-end latency under 150ms.</li>
-                <li>Owned GitHub Actions CI/CD and reduced release effort from 4 hours to 2 hours.</li>
-                <li>Managed Google Play signing, staged rollouts, and production release operations for both apps.</li>
+                <li data-i18n="job1.b1">Led 4 engineers building Algomeet's Meeting SDK with support for 80+ concurrent participants per call.</li>
+                <li data-i18n="job1.b2">Built Compose-based product UI and adaptive 1080p video streaming with end-to-end latency under 150ms.</li>
+                <li data-i18n="job1.b3">Owned GitHub Actions CI/CD and reduced release effort from 4 hours to 2 hours.</li>
+                <li data-i18n="job1.b4">Managed Google Play signing, staged rollouts, and production release operations for both apps.</li>
               </ul>
             </div>
           </article>
@@ -251,13 +269,13 @@
           <article class="timeline-item" data-reveal>
             <div class="timeline-rail"></div>
             <div class="timeline-content">
-              <p class="timeline-meta">Jan 2023 - Dec 2024</p>
-              <h3>Senior Software Engineer · Longsage Group</h3>
-              <p class="timeline-subtitle">Live-streaming and gaming platform</p>
+              <p class="timeline-meta" data-i18n="job2.meta">Jan 2023 - Dec 2024</p>
+              <h3 data-i18n="job2.title">Senior Software Engineer · Longsage Group</h3>
+              <p class="timeline-subtitle" data-i18n="job2.subtitle">Live-streaming and gaming platform</p>
               <ul>
-                <li>Led a 7-engineer team scaling viewer infrastructure to 72,000 concurrent viewers at 96% uptime.</li>
-                <li>Built Jetpack Compose UI and a live-scoring system with updates landing within 2 seconds.</li>
-                <li>Improved quality with automated testing pipelines that reduced bug-related delays by 30%.</li>
+                <li data-i18n="job2.b1">Led a 7-engineer team scaling viewer infrastructure to 72,000 concurrent viewers at 96% uptime.</li>
+                <li data-i18n="job2.b2">Built Jetpack Compose UI and a live-scoring system with updates landing within 2 seconds.</li>
+                <li data-i18n="job2.b3">Improved quality with automated testing pipelines that reduced bug-related delays by 30%.</li>
               </ul>
             </div>
           </article>
@@ -265,13 +283,13 @@
           <article class="timeline-item" data-reveal>
             <div class="timeline-rail"></div>
             <div class="timeline-content">
-              <p class="timeline-meta">2024</p>
-              <h3>Freelance Android Developer</h3>
-              <p class="timeline-subtitle">Consumer and SaaS product delivery</p>
+              <p class="timeline-meta" data-i18n="job3.meta">2024</p>
+              <h3 data-i18n="job3.title">Freelance Android Developer</h3>
+              <p class="timeline-subtitle" data-i18n="job3.subtitle">Consumer and SaaS product delivery</p>
               <ul>
-                <li>Built GeoKiks features from scratch including location discovery, video upload, playback, and real-time alerts.</li>
-                <li>Helped ship an app with 50,000+ downloads and a 4.1 rating on Google Play.</li>
-                <li>Delivered UI screens and voice transcription features for the WooHoo home automation AI assistant.</li>
+                <li data-i18n="job3.b1">Built GeoKiks features from scratch including location discovery, video upload, playback, and real-time alerts.</li>
+                <li data-i18n="job3.b2">Helped ship an app with 50,000+ downloads and a 4.1 rating on Google Play.</li>
+                <li data-i18n="job3.b3">Delivered UI screens and voice transcription features for the WooHoo home automation AI assistant.</li>
               </ul>
             </div>
           </article>
@@ -279,13 +297,13 @@
           <article class="timeline-item" data-reveal>
             <div class="timeline-rail"></div>
             <div class="timeline-content">
-              <p class="timeline-meta">Aug 2021 - Oct 2022</p>
-              <h3>Senior Software Engineer · I-Exceed Technology Solutions</h3>
-              <p class="timeline-subtitle">AppZillon digital banking platform</p>
+              <p class="timeline-meta" data-i18n="job4.meta">Aug 2021 - Oct 2022</p>
+              <h3 data-i18n="job4.title">Senior Software Engineer · I-Exceed Technology Solutions</h3>
+              <p class="timeline-subtitle" data-i18n="job4.subtitle">AppZillon digital banking platform</p>
               <ul>
-                <li>Led 3 Android engineers migrating legacy view systems to Jetpack Compose.</li>
-                <li>Improved load times by around 40% and reduced ANRs through performance tuning.</li>
-                <li>Integrated Apollo GraphQL, Coroutines, Flow, Hilt, and Room-based offline support.</li>
+                <li data-i18n="job4.b1">Led 3 Android engineers migrating legacy view systems to Jetpack Compose.</li>
+                <li data-i18n="job4.b2">Improved load times by around 40% and reduced ANRs through performance tuning.</li>
+                <li data-i18n="job4.b3">Integrated Apollo GraphQL, Coroutines, Flow, Hilt, and Room-based offline support.</li>
               </ul>
             </div>
           </article>
@@ -293,12 +311,12 @@
           <article class="timeline-item" data-reveal>
             <div class="timeline-rail"></div>
             <div class="timeline-content">
-              <p class="timeline-meta">Aug 2016 - Jul 2021</p>
-              <h3>Software Developer · TriokaSoftware Private Limited</h3>
-              <p class="timeline-subtitle">Real-time mobile chat startup</p>
+              <p class="timeline-meta" data-i18n="job5.meta">Aug 2016 - Jul 2021</p>
+              <h3 data-i18n="job5.title">Software Developer · TriokaSoftware Private Limited</h3>
+              <p class="timeline-subtitle" data-i18n="job5.subtitle">Real-time mobile chat startup</p>
               <ul>
-                <li>Built a real-time chat application in Java and Kotlin using MQTT-based client-to-client messaging.</li>
-                <li>Implemented SQLite and Room-backed offline storage plus Crashlytics and activity tracking.</li>
+                <li data-i18n="job5.b1">Built a real-time chat application in Java and Kotlin using MQTT-based client-to-client messaging.</li>
+                <li data-i18n="job5.b2">Implemented SQLite and Room-backed offline storage plus Crashlytics and activity tracking.</li>
               </ul>
             </div>
           </article>
@@ -308,35 +326,35 @@
       <section class="section projects-section" id="projects">
         <div class="section-heading" data-reveal>
           <div>
-            <p class="eyebrow">Selected Work</p>
-            <h2>Products shipped for live users, real releases, and measurable outcomes.</h2>
+            <p class="eyebrow" data-i18n="projects.eyebrow">Selected Work</p>
+            <h2 data-i18n="projects.heading">Products shipped for live users, real releases, and measurable outcomes.</h2>
           </div>
           <div class="section-heading-copy">
-            <p class="section-lead">
+            <p class="section-lead" data-i18n="projects.lead">
               These projects reflect the kind of Android work I do best: solving hard delivery problems while still making the product feel confident, modern, and user-friendly.
             </p>
           </div>
         </div>
         <div class="projects-grid">
           <article class="project-card" data-reveal id="project-algomeet">
-            <div class="project-badge">Meeting SDK</div>
+            <div class="project-badge" data-i18n="project1.badge">Meeting SDK</div>
             <h3>Algomeet</h3>
-            <p>Real-time meeting experience with scalable call participation, polished Compose UI, and high-reliability release delivery.</p>
-            <a href="https://play.google.com/store/apps/details?id=in.algoframe.algomeet&pcampaignid=web_share" target="_blank" rel="noreferrer">View on Google Play</a>
+            <p data-i18n="project1.text">Real-time meeting experience with scalable call participation, polished Compose UI, and high-reliability release delivery.</p>
+            <a href="https://play.google.com/store/apps/details?id=in.algoframe.algomeet&pcampaignid=web_share" target="_blank" rel="noreferrer" data-i18n="project.playLink">View on Google Play</a>
           </article>
 
           <article class="project-card" data-reveal id="project-qianlima">
-            <div class="project-badge">Security Product</div>
-            <h3>Qianlima VPN</h3>
-            <p>Secure connection app with production release ownership, dependency injection rollout, and maintained Android delivery pipelines.</p>
-            <a href="https://play.google.com/store/apps/details?id=com.qingfeng.qianlima&pcampaignid=web_share" target="_blank" rel="noreferrer">View on Google Play</a>
+            <div class="project-badge" data-i18n="project2.badge">Security Product</div>
+            <h3 data-i18n="project2.name">Qianlima VPN</h3>
+            <p data-i18n="project2.text">Secure connection app with production release ownership, dependency injection rollout, and maintained Android delivery pipelines.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.qingfeng.qianlima&pcampaignid=web_share" target="_blank" rel="noreferrer" data-i18n="project.playLink">View on Google Play</a>
           </article>
 
           <article class="project-card" data-reveal id="project-geokiks">
-            <div class="project-badge">Geo-social Video</div>
+            <div class="project-badge" data-i18n="project3.badge">Geo-social Video</div>
             <h3>GeoKiks</h3>
-            <p>Location-aware social video experience with discovery, upload, playback, alerts, 50K+ downloads, and strong public store validation.</p>
-            <a href="https://play.google.com/store/apps/details?id=com.geokiks.geokiks&pcampaignid=web_share" target="_blank" rel="noreferrer">View on Google Play</a>
+            <p data-i18n="project3.text">Location-aware social video experience with discovery, upload, playback, alerts, 50K+ downloads, and strong public store validation.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.geokiks.geokiks&pcampaignid=web_share" target="_blank" rel="noreferrer" data-i18n="project.playLink">View on Google Play</a>
           </article>
         </div>
       </section>
@@ -344,66 +362,67 @@
       <section class="section skills-section" id="skills">
         <div class="section-heading" data-reveal>
           <div>
-            <p class="eyebrow">Skills</p>
-            <h2>Android craftsmanship grounded in architecture, performance, and shipping discipline.</h2>
+            <p class="eyebrow" data-i18n="skills.eyebrow">Skills</p>
+            <h2 data-i18n="skills.heading">Android craftsmanship grounded in architecture, performance, and shipping discipline.</h2>
           </div>
           <div class="section-heading-copy">
-            <p class="section-lead">
+            <p class="section-lead" data-i18n="skills.lead">
               I’m most effective in teams that need both strong implementation depth and someone who can own the path from architecture decisions to the final Play Store release.
             </p>
           </div>
         </div>
         <div class="skills-grid">
           <article class="skill-panel" data-reveal>
-            <h3>Core stack</h3>
-            <p>Kotlin, Java, Android SDK, Jetpack Compose, MVVM, MVP</p>
+            <h3 data-i18n="skills.core.title">Core stack</h3>
+            <p data-i18n="skills.core.text">Kotlin, Java, Android SDK, Jetpack Compose, MVVM, MVP</p>
           </article>
           <article class="skill-panel" data-reveal>
-            <h3>Async and data</h3>
-            <p>Coroutines, Flow, LiveData, StateFlow, Room, SQLite</p>
+            <h3 data-i18n="skills.async.title">Async and data</h3>
+            <p data-i18n="skills.async.text">Coroutines, Flow, LiveData, StateFlow, Room, SQLite</p>
           </article>
           <article class="skill-panel" data-reveal>
-            <h3>Networking</h3>
-            <p>Retrofit, Apollo GraphQL, MQTT, Firebase Cloud Messaging</p>
+            <h3 data-i18n="skills.net.title">Networking</h3>
+            <p data-i18n="skills.net.text">Retrofit, Apollo GraphQL, MQTT, Firebase Cloud Messaging</p>
           </article>
           <article class="skill-panel" data-reveal>
-            <h3>Real-time and media</h3>
-            <p>WebRTC, live streaming, adaptive video, chat systems, push notifications</p>
+            <h3 data-i18n="skills.rt.title">Real-time and media</h3>
+            <p data-i18n="skills.rt.text">WebRTC, live streaming, adaptive video, chat systems, push notifications</p>
           </article>
           <article class="skill-panel" data-reveal>
-            <h3>Delivery</h3>
-            <p>GitHub Actions, Google Play Console, Crashlytics, staged rollouts, release operations</p>
+            <h3 data-i18n="skills.delivery.title">Delivery</h3>
+            <p data-i18n="skills.delivery.text">GitHub Actions, Google Play Console, Crashlytics, staged rollouts, release operations</p>
           </article>
           <article class="skill-panel" data-reveal>
-            <h3>Testing and quality</h3>
-            <p>JUnit, Mockito, debugging, performance tuning, ANR reduction, crash monitoring</p>
+            <h3 data-i18n="skills.testing.title">Testing and quality</h3>
+            <p data-i18n="skills.testing.text">JUnit, Mockito, debugging, performance tuning, ANR reduction, crash monitoring</p>
           </article>
           <article class="skill-panel" data-reveal>
-            <h3>Collaboration</h3>
-            <p>Team leadership, mentoring, Agile and Scrum, technical documentation, quality engineering</p>
+            <h3 data-i18n="skills.collab.title">Collaboration</h3>
+            <p data-i18n="skills.collab.text">Team leadership, mentoring, Agile and Scrum, technical documentation, quality engineering</p>
           </article>
           <article class="skill-panel" data-reveal>
-            <h3>Tooling</h3>
-            <p>Android Studio, GitHub, GitLab, Jira, Postman, JUnit, Mockito</p>
+            <h3 data-i18n="skills.tooling.title">Tooling</h3>
+            <p data-i18n="skills.tooling.text">Android Studio, GitHub, GitLab, Jira, Postman, JUnit, Mockito</p>
           </article>
         </div>
       </section>
 
       <section class="section education-contact">
         <div class="education-card" data-reveal>
-          <p class="eyebrow">Education</p>
-          <h2>Bachelor of Technology</h2>
-          <p>Priyadarshini College of Science & Technology, AP, India</p>
-          <p>Graduated in June 2015</p>
+          <p class="eyebrow" data-i18n="edu.eyebrow">Education</p>
+          <h2 data-i18n="edu.degree">Bachelor of Technology</h2>
+          <p data-i18n="edu.school">Priyadarshini College of Science & Technology, AP, India</p>
+          <p data-i18n="edu.date">Graduated in June 2015</p>
         </div>
         <div class="contact-card" id="contact" data-reveal>
-          <div class="contact-socials" aria-label="Social links">
+          <div class="contact-socials" aria-label="Social links" data-i18n-aria="a11y.socials">
             <a
               class="contact-social"
               href="https://www.linkedin.com/in/puneeth-builds-android/"
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn profile"
+              data-i18n-aria="a11y.linkedin"
             >
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M6.94 8.5H3.56V20h3.38zm.22-3.69A1.97 1.97 0 1 0 5.2 6.78a1.97 1.97 0 0 0 1.96-1.97M20.44 20h-3.37v-5.6c0-1.34-.03-3.06-1.86-3.06-1.87 0-2.16 1.46-2.16 2.96V20H9.68V8.5h3.24v1.57h.05c.45-.86 1.55-1.76 3.2-1.76 3.42 0 4.05 2.25 4.05 5.17z"/>
@@ -415,17 +434,18 @@
               target="_blank"
               rel="noreferrer"
               aria-label="Instagram profile"
+              data-i18n-aria="a11y.instagram"
             >
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2m0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5a3.95 3.95 0 0 0 3.95 3.95h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5a3.95 3.95 0 0 0-3.95-3.95zm8.95 1.35a1.1 1.1 0 1 1-1.1 1.1 1.1 1.1 0 0 1 1.1-1.1M12 6.85A5.15 5.15 0 1 1 6.85 12 5.15 5.15 0 0 1 12 6.85m0 1.8A3.35 3.35 0 1 0 15.35 12 3.35 3.35 0 0 0 12 8.65"/>
               </svg>
             </a>
           </div>
-          <p class="eyebrow">Contact</p>
-          <h2>Let’s build the next Android product.</h2>
-          <p>I’m strongest when the product needs both engineering depth and polished user experience delivery.</p>
+          <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+          <h2 data-i18n="contact.heading">Let’s build the next Android product.</h2>
+          <p data-i18n="contact.text">I’m strongest when the product needs both engineering depth and polished user experience delivery.</p>
           <div class="contact-actions">
-            <a class="button button-primary" href="mailto:kpuneethkumar450@gmail.com">Hire Me</a>
+            <a class="button button-primary" href="mailto:kpuneethkumar450@gmail.com" data-i18n="contact.cta">Hire Me</a>
           </div>
           <div class="contact-links">
             <a href="mailto:kpuneethkumar450@gmail.com">kpuneethkumar450@gmail.com</a>
@@ -436,6 +456,7 @@
     </main>
   </div>
 
+  <script src="translations.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
