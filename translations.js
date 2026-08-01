@@ -152,6 +152,7 @@ window.TRANSLATIONS = {
     "a11y.socials": "社交链接",
     "a11y.linkedin": "领英主页",
     "a11y.instagram": "Instagram 主页",
+    "a11y.whatsapp": "WhatsApp 联系",
     "a11y.achievements": "核心成果"
   }
 };
