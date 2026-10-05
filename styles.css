@@ -603,6 +603,11 @@ img {
   grid-template-columns: repeat(3, 1fr);
 }
 
+html[lang="en"] .lang-zh-only,
+html[lang="zh-CN"] .lang-en-only {
+  display: none;
+}
+
 .education-contact {
   grid-template-columns: 0.8fr 1.2fr;
 }

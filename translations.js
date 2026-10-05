@@ -47,6 +47,7 @@ window.TRANSLATIONS = {
     "fit.works.text": "希望由一位工程师同时负责 UI 打磨、架构决策、L3 问题排查与版本发布的产品团队。",
 
     "stats.years.label": "年以上经验，为创业公司、SaaS 与大规模平台交付 Android 产品。",
+    "stats.years.value": "10+",
     "stats.teams.value": "4 支团队",
     "stats.teams.label": "在 SDK、UI 现代化、工程师培养、稳定性与发布体系方面的团队领导经验。",
     "stats.downloads.value": "5 万+",
