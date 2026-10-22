@@ -84,7 +84,7 @@ window.TRANSLATIONS = {
     "job2.meta": "2023 年 1 月 – 2024 年 12 月",
     "job2.title": "高级软件工程师 · Longsage Group",
     "job2.subtitle": "直播与游戏平台",
-    "job2.b1": "构建大型直播平台的 Android 客户端，使用 ExoPlayer/Media3 播放视频。",
+    "job2.b1": "带领 4 人团队构建大型直播平台的 Android 客户端，使用 ExoPlayer/Media3 播放视频。",
     "job2.b2": "构建 Jetpack Compose UI 与实时比分系统，数据更新 2 秒内送达。",
     "job2.b3": "搭建自动化测试流水线，将缺陷导致的延期减少 30%。",
 
