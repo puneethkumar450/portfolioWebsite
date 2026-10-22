@@ -26,7 +26,7 @@ window.TRANSLATIONS = {
     "fit.bring.label": "我的优势",
     "fit.bring.item1": "10 年以上 Android 交付经验，覆盖创业公司与产品团队",
     "fit.bring.item2": "精通 Jetpack Compose、Kotlin、Clean Architecture、安全与版本发布",
-    "fit.bring.item3": "具备团队领导经验，善于培养工程师并在压力下交付",
+    "fit.bring.item3": "生产稳定性、版本发布与务实的工程师指导",
 
     "fit.proof1.label": "成果 01",
     "fit.proof1.value": "高并发会议通话",
@@ -35,7 +35,7 @@ window.TRANSLATIONS = {
 
     "fit.proof2.label": "成果 02",
     "fit.proof2.value": "直播 Android 客户端",
-    "fit.proof2.text": "带领 7 人团队构建大规模直播客户端，使用 ExoPlayer/Media3 播放视频。",
+    "fit.proof2.text": "构建大型直播平台的 Android 客户端，使用 ExoPlayer/Media3 播放视频。",
     "fit.proof2.link": "查看项目",
 
     "fit.proof3.label": "成果 03",
@@ -48,8 +48,8 @@ window.TRANSLATIONS = {
 
     "stats.years.label": "年以上经验，为创业公司、SaaS 与大规模平台交付 Android 产品。",
     "stats.years.value": "10+",
-    "stats.teams.value": "4 支团队",
-    "stats.teams.label": "在 SDK、UI 现代化、工程师培养、稳定性与发布体系方面的团队领导经验。",
+    "stats.scores.value": "2 秒",
+    "stats.scores.label": "直播平台 Android 客户端的实时比分更新在 2 秒内送达。",
     "stats.downloads.value": "5 万+",
     "stats.downloads.label": "已上线消费级应用累计公开下载量。",
 
@@ -67,7 +67,7 @@ window.TRANSLATIONS = {
     "exp.heading": "跨越会议、直播、银行、自动化、AI 助手与聊天领域。",
     "exp.lead": "从早期聊天应用到大规模直播与现代会议平台，不变的主线是：构建快速、稳定、随时可上线的 Android 产品。",
     "exp.metric1": "10+ 年经验",
-    "exp.metric2": "7 人直播团队",
+    "exp.metric2": "直播与实时比分",
     "exp.metric3": "4 人会议 SDK 团队",
     "exp.metric4": "98% 无崩溃会话",
 
@@ -84,7 +84,7 @@ window.TRANSLATIONS = {
     "job2.meta": "2023 年 1 月 – 2024 年 12 月",
     "job2.title": "高级软件工程师 · Longsage Group",
     "job2.subtitle": "直播与游戏平台",
-    "job2.b1": "带领 7 人团队构建大型直播平台的 Android 客户端，使用 ExoPlayer/Media3 播放视频。",
+    "job2.b1": "构建大型直播平台的 Android 客户端，使用 ExoPlayer/Media3 播放视频。",
     "job2.b2": "构建 Jetpack Compose UI 与实时比分系统，数据更新 2 秒内送达。",
     "job2.b3": "搭建自动化测试流水线，将缺陷导致的延期减少 30%。",
 
@@ -98,7 +98,7 @@ window.TRANSLATIONS = {
     "job4.meta": "2021 年 8 月 – 2022 年 10 月",
     "job4.title": "高级软件工程师 · I-Exceed Technology Solutions",
     "job4.subtitle": "AppZillon 数字银行平台",
-    "job4.b1": "带领 3 名 Android 工程师将传统 View 体系迁移至 Jetpack Compose。",
+    "job4.b1": "将传统 XML View 界面迁移至 Jetpack Compose。",
     "job4.b2": "通过性能调优将加载速度提升约 40%，并显著减少 ANR。",
     "job4.b3": "集成 Apollo GraphQL、Coroutines、Flow、Hilt、JWT 刷新、加密存储与基于 Room 的离线支持。",
 
