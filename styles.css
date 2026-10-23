@@ -712,6 +712,13 @@ html[lang="zh-CN"] .lang-en-only {
   color: var(--green-soft);
 }
 
+.project-links {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+}
+
 .contact-links {
   display: grid;
   gap: 10px;

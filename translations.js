@@ -110,8 +110,11 @@ window.TRANSLATIONS = {
 
     "projects.eyebrow": "精选作品",
     "projects.heading": "面向真实用户、真实发布、成果可量化的产品。",
-    "projects.lead": "这些项目代表了我最擅长的 Android 工作：在解决高难度交付问题的同时，让产品保持现代、可靠、易用的体验。",
+    "projects.lead": "这些项目展示了我的网站与 Android 开发工作：解决实际交付问题，同时打造现代、可靠、易用的产品体验。",
     "project.playLink": "在 Google Play 查看",
+    "project.websiteLink": "访问网站",
+    "project5.badge": "网站与 Android 应用",
+    "project5.text": "为独立健身房开发网站和 Android 应用，涵盖会员管理、出勤记录、续费、收款和商品店铺。",
     "project1.badge": "会议 SDK",
     "project1.text": "会议 SDK 与移动应用：支持高并发通话、实时语音转写和 AI 会议摘要。",
     "project2.badge": "安全产品",
