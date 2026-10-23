@@ -109,7 +109,7 @@ window.TRANSLATIONS = {
     "job5.b2": "实现基于 SQLite 与 Room 的离线存储，并接入 Crashlytics 与行为统计。",
 
     "projects.eyebrow": "精选作品",
-    "projects.heading": "面向真实用户、真实发布、成果可量化的产品。",
+    "projects.heading": "参与过的项目：",
     "projects.lead": "这些项目展示了我的网站与 Android 开发工作：解决实际交付问题，同时打造现代、可靠、易用的产品体验。",
     "project.playLink": "在 Google Play 查看",
     "project.websiteLink": "访问网站",
