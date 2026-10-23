@@ -109,7 +109,7 @@ window.TRANSLATIONS = {
     "job5.b2": "实现基于 SQLite 与 Room 的离线存储，并接入 Crashlytics 与行为统计。",
 
     "projects.eyebrow": "精选作品",
-    "projects.heading": "参与过的项目：",
+    "projects.heading": "参与过的项目",
     "projects.lead": "这些项目展示了我的 Android 开发工作：解决实际交付问题，同时打造现代、可靠、易用的产品体验。",
     "project.playLink": "在 Google Play 查看",
     "project5.badge": "Android 应用功能",
@@ -125,8 +125,8 @@ window.TRANSLATIONS = {
     "project4.text": "酒店业语音助手 Android UI：覆盖客人请求流程、语音转文字、REST 集成与实时异常处理。",
 
     "skills.eyebrow": "技能",
-    "skills.heading": "以架构、性能与交付纪律为根基的 Android 工艺。",
-    "skills.lead": "我最能发挥价值的团队，既需要扎实的实现深度，也需要有人从架构决策一路负责到 Play 商店的最终发布。",
+    "skills.heading": "我掌握的技能",
+    "skills.lead": "涵盖 Kotlin、Jetpack Compose、架构设计、测试与 Play 商店发布。",
     "skills.core.title": "核心技术栈",
     "skills.core.text": "Kotlin、Java、XML、Dart、Android SDK、Jetpack Compose、XML 布局、Material Design",
     "skills.arch.title": "架构",
